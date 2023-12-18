@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+
+  server:
+    build:
+      context: /server
+      dockerfile: dockerfile
+    ports:
+      - 5051:5051
+
+  getmovie:
+    build:
+      context: /getGame
+      dockerfile: dockerfile
+    ports:
+      - 80:80
+
+  mysql_db:
+    container_name: mysql_db
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: toxir2002
+
+  db:
+    depends_on:
+      - mysql_db
+    build:
+      context: /getChoice
+      dockerfile: dockerfile
+    ports:
+      - 3001:3001
+    environment:
+      MYSQL_HOST: mysql_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: toxir2002
