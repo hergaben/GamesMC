@@ -23,11 +23,11 @@ async def root():
 
 @app.get("/list/")
 async def get_list(q: list | None = Query()):
-    film_list = []
+    game_list = []
     for id in q:
         r = requests.get(f"https://mmo-games.p.rapidapi.com/game?id={id}&rapidapi-key=02e3aad88dmsh200fff7930d9119p1a6a70jsn14ce6533a67a")
-        film_list.append(r.json())
-    return film_list
+        game_list.append(r.json())
+    return game_list
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=int(os.getenv('PORT', 80)))
