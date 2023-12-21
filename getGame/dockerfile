@@ -6,6 +6,7 @@ COPY . .
 RUN pip install requests
 RUN pip install uvicorn
 RUN pip install fastapi
+RUN pip install -r requirements.txt
 
 
 #RM if loading to yandex

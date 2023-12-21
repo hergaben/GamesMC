@@ -9,7 +9,6 @@
     <h1>Выберите случайный игру на вечер</h1>
     <a href="/all">Избранное</a>
     <button id="gen_btn">Найти</button><br>
-    <input type="text" id="input_games" name="Введите id игры"><br>
     <button id="add">Добавить в избранное</button>
 
     <div class="imdbID">
@@ -20,6 +19,7 @@
         <p id="release_date"></p>
     </div>
 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename= 'script.js') }}"></script>
 </body>
 </html>

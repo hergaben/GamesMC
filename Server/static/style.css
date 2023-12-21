@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#gen_btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#gen_btn:hover {
+    background-color: #218838;
+}
+
+#add {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add:hover {
+    background-color: #c82333;
+}
+
+.imdbID {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+#name_game {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#description_game {
+    margin-top: 10px;
+}
+
+#genre_game {
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+#release_date {
+    margin-top: 10px;
+    color: #007BFF;
+}

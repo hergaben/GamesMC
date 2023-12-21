@@ -1,0 +1,1 @@
+btn = document.getElementById('gen_btn')
