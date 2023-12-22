@@ -1,0 +1,157 @@
+/* Расположение блока на странице */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0 0; /* Установите отступ сверху на 150px */
+    background-color: #f3f4f6;
+}
+
+/* Стили для изображения */
+img {
+    display: block; /* Убедитесь, что изображение является блочным элементом */
+    margin: auto; /* Центрирование изображения */
+    width: 96px; /* Установка ширины на 96 пикселей */
+    height: 96px; /* Установка высоты на 96 пикселей */
+}
+
+/* Дополнительные стили */
+.container {
+    text-align: center;
+}
+
+
+/* Использование шрифта для элементов на странице */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Пример применения шрифта к h1*/
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div {
+    text-align: center;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+/* Стили для верхнего поля ввода */
+#fname {
+    width: 448px;
+    height:38px;
+    --tw-border-width: 1px;
+    border-width: var(--tw-border-width);
+    --tw-border-color: #e5e7eb;
+    border-color: var(--tw-border-color);
+    --tw-border-opacity: 1;
+    border-opacity: var(--tw-border-opacity);
+    border-radius: 0.375rem 0.375rem 0 0;
+    padding: 0.875rem;
+    font-size: 1rem;
+}
+
+/* Placeholder для верхнего поля ввода */
+#fname::placeholder {
+    font-size: 13px;
+    color: #718096;
+}
+
+/* Стили для нижнего поля ввода */
+#lname {
+    width: 448px;
+    height:38px;
+    margin-bottom: 38px;
+    --tw-border-width: 1px;
+    border-width: var(--tw-border-width);
+    --tw-border-color: #e5e7eb;
+    border-color: var(--tw-border-color);
+    --tw-border-opacity: 1;
+    border-opacity: var(--tw-border-opacity);
+    border-radius: 0 0 0.375rem 0.375rem;
+    padding: 0.875rem;
+    font-size: 1rem;
+}
+
+/* Placeholder для нижнего поля ввода */
+#lname::placeholder {
+    font-size: 13px;
+    color: #718096;
+}
+
+/* Стили для кнопки "Войти" */
+#script {
+    width: 448px;
+    height: 38px;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 0.9rem; /* Изменено значение font-size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Добавлено стилизованное поле для центрирования кнопки */
+.button-container {
+    width: 448px;
+    max-width: 100%;
+    margin-bottom: 30px;
+
+}
+
+#script:hover {
+    background-color: #005cb2;
+}
+
+#script:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(83, 125, 212, 1);
+}
+
+#script:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(83, 125, 212, 1);
+}
+
+/* Добавленные стили */
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    border-top-color: rgb(229, 231, 235);
+    border-right-color: rgb(229, 231, 235);
+    border-bottom-color: rgb(229, 231, 235);
+    border-left-color: rgb(229, 231, 235);
+}
+

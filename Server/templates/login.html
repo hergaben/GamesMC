@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_login.css') }}">
 </head>
 
-<body>
+<body class="container">
     <div style="margin-left: auto;margin-right: auto;">
-        <h1>Необходима авторизация</h1>
+        <img class="mx-auto h-24 w-auto" src="https://login.mirea.ru/static/img/logo.d27a0d1b934a.png" alt="РТУ МИРЭА">
+        <h1>Авторизация</h1>
+        <form method="post">
+            <input type="text" id="fname" name="fname" placeholder="Login"><br>
+            <input type="text" id="lname" name="lname" placeholder="Password">
+            <div class="button-container">
+                <input type="submit" value="Войти" id="script">
+            </div>
+        </form>
         <h3 style="visibility:{{ wrong_datg_visability }}">Неверный логин или пароль</h3>
         <h3 style="visibility:{{ no_permission_visability }}">Доступ запрещен</h3>
-        <form method="post">
-            <label for="fname">Login:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Password:</label><br>
-            <input type="text" id="lname" name="lname">
-            <input type="submit" value="Submit" id="script">
-        </form>
     </div>
     <script src="{{ url_for('static', filename='login.js') }}"></script>
 </body>
